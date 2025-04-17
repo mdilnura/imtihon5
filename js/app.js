@@ -29,10 +29,9 @@ fetch("https://json-api.uz/api/project/fn37/cars")
                 </div>`;
     });
 
-    localStorage.setItem("goToIndex", Date.now());
+    // localStorage.setItem("goToIndex", Date.now());
     // window.location.href = "add-page.html";
   });
-
 // window.addEventListener("storage", (e) => {
 //   if (e.key === "goToIndex") {
 //     window.location.href = "add-page.html";
