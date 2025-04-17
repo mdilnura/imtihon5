@@ -13,14 +13,12 @@ document.getElementById("addButton").addEventListener("click", async () => {
   const newProduct = { name, description, price };
 
   try {
-    // API orqali serverga jo‘natish
     const createdProduct = await addProduct(newProduct);
     console.log("Yangi product serverga yuborildi:", createdProduct);
-    localStorage.setItem("goToIndex", Date.now()); // har doim yangi qiymat
-    // Shu oynani ham index.html ga yuboramiz
+    localStorage.setItem("goToIndex", Date.now());
+
     window.location.href = "index.html";
 
-    // Sahifani o‘zgartirish
     window.location.href = "index.html";
   } catch (error) {
     alert("Serverga ma'lumot yuborishda xatolik yuz berdi.");

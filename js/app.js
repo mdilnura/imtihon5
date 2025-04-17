@@ -29,8 +29,7 @@ fetch("https://json-api.uz/api/project/fn37/cars")
                 </div>`;
     });
 
-    localStorage.setItem("goToIndex", Date.now()); // har doim yangi qiymat
-    // Shu oynani ham index.html ga yuboramiz
+    localStorage.setItem("goToIndex", Date.now());
     // window.location.href = "add-page.html";
   });
 
@@ -39,4 +38,4 @@ fetch("https://json-api.uz/api/project/fn37/cars")
 //     window.location.href = "add-page.html";
 //   }
 // });
-//   addproduct  
+//   addproduct
