@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="h-full" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create page</title>
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body>
+    <div class="flex flex-col justify-center items-center h-screen">
+      <h1 class="font-bold text-[30px] mb-[30px] text-center">Create card</h1>
+      <form class="w-[300px] gap-4 flex flex-col" onsubmit="return false;">
+        <input
+          id="nameCreate"
+          type="text"
+          placeholder="Nomini kiriting*"
+          class="input input-info"
+        />
+        <input
+          id="descriptionCreate"
+          type="text"
+          placeholder="Qisqacha ma'lumot kiriting*"
+          class="input input-info"
+        />
+        <input
+          id="priceCreate"
+          type="text"
+          placeholder="Narxini kiting*"
+          class="input input-info"
+        />
+      </form>
+      <button id="addButton" class="btn btn-primary mt-[30px]">
+        Create card
+      </button>
+    </div>
+    <script src="./js/add-page.js"></script>
+    <script type="module" src="./js/add-page.js"></script>
+  </body>
+</html>
